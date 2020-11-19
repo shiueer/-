@@ -6,10 +6,10 @@ require("dbconnect.php");
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>貧困學生補助經費申請</title>
+<title>補助經費申請表</title>
 </head>
 <body>
-<h1>貧困學生補助經費申請表</h1>
+<h1>補助經費申請表</h1>
 <table border="5"  width="auto">
     <thead>      
       <tr>
@@ -23,15 +23,15 @@ require("dbconnect.php");
       </tr>
       <tr>
         <th>家庭狀況</th>
-        <th>稱謂
-        <input name="title" type="text" id="title" />
-        姓名
-        <input name="title" type="text" id="title" /></th>
+        <th>
+          父親 :<input name="title" type="text" id="title" />
+          姓名 :<input name="title" type="text" id="title" />
+        </th>
         <th>家庭狀況</th>
-        <th>稱謂
-        <input name="title" type="text" id="title" />
-        姓名
-        <input name="title" type="text" id="title" /></th>
+        <th>
+          母親 :<input name="title" type="text" id="title" />
+          姓名 :<input name="title" type="text" id="title" />
+        </th>
       </tr>
       <tr>
         <th>申請補助總類</th>
@@ -59,14 +59,9 @@ require("dbconnect.php");
           <th>
             <input name="title" type="text" id="title" readonly/></th>
           </th>
-          <th>秘書簽章</th>
-          <th><input type="radio" name = "role" value = "2" checked disabled><label>同意</label></th>
-      </tr>
-      <tr>
-        <th>校長簽章</th>
+          <th>校長簽章</th>
         <th><input type="radio" name = "role" value = "2" checked disabled><label>同意</label></th>
         </th>
-      </tr>
     </thead> 
 
 </table>
