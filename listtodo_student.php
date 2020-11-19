@@ -41,11 +41,26 @@ while (	$rs=mysqli_fetch_assoc($result)) {
   echo "<td>" . $rs['MName'] ,"</td>";
   echo "<td>" . $rs['Income_status'] ,"</td>";
   echo "<td>" . $rs['Note'] ,"</td>";
-  echo "<td>" . $rs['T_admit'] ,"</td>";
-  echo "<td>" . $rs['S_admit'] ,"</td>";
+  if($rs['T_admit'] == 1){
+    echo "<td bgcolor = #72fb6f>" . $rs['T_admit'] ,"</td>";
+  }
+  else{
+    echo "<td bgcolor = #fe6158>" . $rs['T_admit'] ,"</td>";
+  }
+  if($rs['S_admit'] == 1){
+    echo "<td bgcolor = #72fb6f>" . $rs['S_admit'] ,"</td>";
+  }
+  else{
+    echo "<td bgcolor = #fe6158>" . $rs['S_admit'] ,"</td>";
+  }
   echo "<td>" . $rs['Amount'] ,"</td>";
   echo "<td>" . $rs['S_note'] ,"</td>";
-  echo "<td>" . $rs['P_admit'] ,"</td>";
+  if($rs['P_admit'] == 1){
+    echo "<td bgcolor = #72fb6f>" . $rs['P_admit'] ,"</td>";
+  }
+  else{
+    echo "<td bgcolor = #fe6158>" . $rs['P_admit'] ,"</td>";
+  }
   echo "<td><a href= 'editTask.php?ID={$rs['ID']}'>Edit</a>". "</td>";
   echo "<td><a href= 'listtoset_employee.php?ID={$rs['ID']}'>OK</a>". "</td></tr>";
 }
