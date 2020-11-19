@@ -13,7 +13,7 @@ $result=mysqli_query($conn,$sql) or die("DB Error: Cannot retrieve message.");
 
 <body>
 <a href="loginForm.php"><button>OUT</button></a>
-<p>my to do list !! </p>
+<p>my apply list !! </p>
 <hr/>
 <table width="200" border="1">
   <tr>
